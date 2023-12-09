@@ -1,0 +1,23 @@
+@import './mixin';
+
+.container {
+
+    padding: 0px 31px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+      width: 448px; //418 + 15 + 15
+    }
+
+    @include tel {
+        width: 448px; //418 + 15 + 15
+    }
+
+    @include tablet {
+        width: 720px; //690 + 15 + 15
+    }
+
+    @include desktop {
+        width: 1200px; //1170 + 15 + 15
+    }
+}

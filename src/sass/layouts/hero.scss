@@ -1,0 +1,49 @@
+.hero {
+    padding-top: 145px;
+    padding-bottom: 0;
+    background-image: url('../../images/hero.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.heroTitle {
+    @include font(85, 700, 85, -1.7);
+    color: var(--dark-navi);
+}
+
+.heroText {
+    margin-top: 25px;
+    @include font(24, 400, 30, -0.24);
+    color: var(--orange);
+}
+
+.heroBtn {
+    margin-bottom: 225px;
+    margin-top: 25px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: var(--light-blue);
+    border: 1px solid;
+    border-radius: 32px;
+    border-color: inherit;
+    cursor: pointer;
+    @include hoverLinkTransition;
+
+   &:hover {
+    color: var(--light-blue);
+    background-color: #fff;
+}             
+}
+
+.afterCards {
+    margin-top: 180px;
+    padding: 0 67px;
+    display: flex;
+    align-items: center;
+}
+
+.afterCardsText {
+    margin: 0 33px;
+    @include font(40, 700, 45, -0.4);
+    color: var(--orange);
+}

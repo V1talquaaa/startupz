@@ -1,0 +1,40 @@
+@import "../utils/mixin";
+
+.header {
+  padding-top: 30px;
+}
+nav {
+  @include betweenFlex;
+}
+
+.navList {
+  @include centeredFlex;
+  gap: 40px;
+  @include font(18, 400, 0, 0);
+}
+
+.navLink {
+  color: var(--dark-navi);
+  @include hoverLinkTransition;
+
+  &:hover {
+    color: var(--light-blue);
+  }
+}
+
+.headerBtn {
+  padding: 15px 35px;
+  color: var(--light-blue);
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 32px;
+  border-color: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  @include hoverLinkTransition;
+
+  &:hover {
+    color: #fff;
+    background-color: var(--light-blue);
+  }
+}

@@ -1,0 +1,55 @@
+.values {
+  padding-top: 172px;
+  padding-bottom: 196px;
+  background-color: #fbfafa;
+}
+
+.valuesTitle {
+  @include font(50, 700, 50, -1);
+  color: var(--dark-navi);
+}
+
+.valuesList {
+  margin-top: 79px;
+  display: flex;
+}
+
+.valuesItem:nth-child(1) {
+  margin-right: 95px;
+  width: 641px;
+}
+.valuesItem:nth-child(2) {
+  margin-right: 80px;
+
+}
+
+.valuesItemSpan {
+  @include font(30, 700, 30, -0.3);
+  color: var(--orange);
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    margin-top: 19px;
+    width: 50px;
+    height: 1px;
+    display: block;
+    background-color: var(--dark-navi);
+  }
+}
+
+.valuesItemText {
+  @include font(30, 400, 38, -0.3);
+  margin-top: 26px;
+  color: var(--dark-navi);
+}
+
+.bulbWrap {
+  position: relative;
+}
+
+.bulb {
+  position: absolute;
+  right: 0;
+}

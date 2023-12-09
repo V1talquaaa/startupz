@@ -1,0 +1,41 @@
+.hiring {
+    padding: 112px 0px 119px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FBFAFA;
+}
+
+.hiringContentWrap {
+    display: inline-block;
+    text-align: center;
+    width: 443px;
+}
+
+.hiringTitle {
+    @include font(50, 700, 50, -1);
+    color: var(--dark-navi);
+}
+
+.hiringText {
+    @include font(24, 400, 30, 0.24);
+    margin: 30px 0;
+    color: var(--orange);
+}
+
+.hiringBtn {
+    margin-bottom: 225px;
+    margin-top: 25px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: var(--light-blue);
+    border: 1px solid;
+    border-radius: 32px;
+    border-color: inherit;
+    cursor: pointer;
+    @include hoverLinkTransition;
+
+   &:hover {
+    color: var(--light-blue);
+    background-color: #fff;
+}             
+}

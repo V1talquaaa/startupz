@@ -1,0 +1,61 @@
+footer {
+    padding: 90px 0px 123px;
+
+    & .container {
+        display: flex;
+    }
+}
+
+.footerCopyWrap {
+    margin-right: 230px;
+    @include font(18, 400, 30, 0);
+    color: #939393;
+}
+
+.footerCopy {
+ margin-top: 85px;                           
+}
+
+.footerCompanies {
+    margin-right: 155px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerTitle {
+   @include font(18, 400, 18, 0);
+   margin-bottom: 19px;
+}
+
+
+.footerItem {
+    @include font(18, 400, 35, 0);
+    color: var(--light-blue);
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+}
+
+.footerContact {
+    margin-right: 90px;              
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContactText {
+    @include font(18, 400, 24, 0);
+    color: #939393;
+}
+
+.footerContactLink {
+    @include font(18, 400, 30, 0);
+    color: var(--light-blue);
+
+}
+
+.footerSocialItems:not(:last-child) {
+        margin-bottom: 10px;
+    }
