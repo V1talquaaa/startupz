@@ -1,14 +1,19 @@
 .hiring {
-    padding: 112px 0px 119px 0px;
-    display: flex;
-    justify-content: space-between;
+    padding: 40px 0px;
     background-color: #FBFAFA;
+    @include tablet {
+        padding: 112px 0px 119px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .hiringContentWrap {
     display: inline-block;
     text-align: center;
-    width: 443px;
+    @include tablet {
+        width: 443px;
+    }
 }
 
 .hiringTitle {
@@ -23,7 +28,7 @@
 }
 
 .hiringBtn {
-    margin-bottom: 225px;
+    margin-bottom: 40px;
     margin-top: 25px;
     padding: 15px 35px;
     color: #fff;
@@ -37,5 +42,14 @@
    &:hover {
     color: var(--light-blue);
     background-color: #fff;
+
 }             
+}
+
+.hiringImage {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
 }

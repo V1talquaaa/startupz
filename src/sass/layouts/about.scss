@@ -1,7 +1,11 @@
 .about {
+    padding: 40px 0px;
+    background-color: #FBFAFA;
+
+    @include tablet {
     padding-top: 147px;
     padding-bottom: 157px;
-    background-color: #FBFAFA;
+    }
 }
 
 .aboutTitle {
@@ -17,22 +21,30 @@
 
 .aboutList {
     margin-top: 79px;
-    display: flex;
+
+    @include desktop {
+        display: flex;
+    }
+
 }
 
-.aboutItem:nth-child(1) {
-    margin-right: 95px;
-    width: 313px;
-}
-.aboutItem:nth-child(2) {
-    margin-right: 80px;
-    width: 329px;
+@include desktop {
+    .aboutItem:nth-child(1) {
+        margin-right: 95px;
+        width: 313px;
+    }
+    .aboutItem:nth-child(2) {
+        margin-right: 80px;
+        width: 329px;
+        
+    }
     
+    .aboutItem:last-child {
+        width: 307px;
+    }
 }
 
-.aboutItem:last-child {
-    width: 307px;
-}
+
 
 .aboutItemSpan {
     @include font(30, 700, 30, -0.3);

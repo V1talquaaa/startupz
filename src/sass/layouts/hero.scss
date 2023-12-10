@@ -1,14 +1,22 @@
 .hero {
-    padding-top: 145px;
-    padding-bottom: 0;
-    background-image: url('../../images/hero.png');
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
+    padding-top: 100px;
+
+    @include desktop {
+        padding-top: 145px;
+        padding-bottom: 0;
+        background-image: url('../../images/hero.png');
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+    }
 }
 
 .heroTitle {
-    @include font(85, 700, 85, -1.7);
+    @include font(60, 700, 85, -1.7);
     color: var(--dark-navi);
+
+    @include tablet {
+        @include font(85, 700, 85, -1.7);
+    }
 }
 
 .heroText {
@@ -18,7 +26,7 @@
 }
 
 .heroBtn {
-    margin-bottom: 225px;
+    margin-bottom: 50px;
     margin-top: 25px;
     padding: 15px 35px;
     color: #fff;
@@ -32,7 +40,11 @@
    &:hover {
     color: var(--light-blue);
     background-color: #fff;
-}             
+}
+
+    @include desktop {
+        margin-bottom: 225px;
+    }
 }
 
 .afterCards {

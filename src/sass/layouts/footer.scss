@@ -1,59 +1,142 @@
 footer {
-    padding: 90px 0px 123px;
+    padding: 40px 0px;
+    background-color: #4e4b4b;
+    @include desktop {
+        background-color: #fff;
+    }
 
     & .container {
         display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    @include tablet {
+        & .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            
+        }
+    }
+
+    @include desktop {
+        & .container {
+            padding: 90px 0px 123px;
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
 
 .footerCopyWrap {
-    margin-right: 230px;
+    
     @include font(18, 400, 30, 0);
-    color: #939393;
+    color: #e0d9d9;
+
+    @include desktop {
+        margin-right: 230px;
+        color: #939393;
+    }
 }
 
 .footerCopy {
- margin-top: 85px;                           
+ margin-top: 10px;
+ @include desktop {
+    margin-top: 85px; 
+ }                           
 }
 
 .footerCompanies {
-    margin-right: 155px;
-
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include tablet {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    @include desktop {
+        margin-right: 155px;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
 }
 
 .footerTitle {
    @include font(18, 400, 18, 0);
    margin-bottom: 19px;
+   color: #fff;
+    @include tablet {
+        margin-top: 19px;
+    }
+
+    @include desktop {
+        margin-top: 0;
+        color: var(--dark-navi);
+    }
+}
+
+.footerList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include tablet {
+        display: block;
+    }
 }
 
 
 .footerItem {
     @include font(18, 400, 35, 0);
     color: var(--light-blue);
-    &:not(:last-child) {
-        margin-bottom: 10px;
+    @include desktop {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 
 }
 
-.footerContact {
-    margin-right: 90px;              
+.footerContact {             
     display: flex;
     flex-direction: column;
+
+    @include desktop {
+        margin-right: 90px;  
+    }
 }
 
 .footerContactText {
     @include font(18, 400, 24, 0);
-    color: #939393;
+    color: #e0d9d9;
+
+    @include desktop {
+        color: #939393;
+    }
+
 }
 
 .footerContactLink {
     @include font(18, 400, 30, 0);
     color: var(--light-blue);
 
+}
+
+.footerSocialList {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+    @include desktop {
+        display: block;
+        margin-bottom: 0;
+        gap: 0;
+    }
 }
 
 .footerSocialItems:not(:last-child) {

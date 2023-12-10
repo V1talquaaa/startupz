@@ -22,10 +22,7 @@ export const Header = () => {
               </a>
             </li>
             <li className="navItem">
-              <a href="#form">
-              <button type="button" className="headerBtn">Work with us!</button>
-              </a>
-              
+              <button type="button" className="headerBtn"><a href="#hiring">Work with us!</a></button>
             </li>
           </ul>
         </nav>

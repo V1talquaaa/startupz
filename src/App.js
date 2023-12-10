@@ -1,26 +1,15 @@
-import { About } from "./components/About";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Hiring } from "./components/Hiring";
-import { Rocket } from "./components/Rocket";
-import { Solutions } from "./components/Solutions";
-import { Values } from "./components/Values";
-import { Works } from "./components/Works";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Openings } from "./pages/Openings";
 
 function App() {
   return (
-<>
-<Header />
-<Hero />
-<About />
-<Solutions />
-<Values />
-<Works />
-<Hiring />
-<Rocket />
-<Footer />
-</>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/openings" element={<Openings />} />
+      </Routes>
+    </>
   );
 }
 

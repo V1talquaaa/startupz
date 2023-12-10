@@ -1,6 +1,10 @@
 .works {
-  padding-top: 140px;
-  padding-bottom: 180px;
+  padding: 40px 0px;
+
+  @include tablet {
+    padding-top: 140px;
+    padding-bottom: 180px;
+  }
 }
 
 .worksTitle {
@@ -11,20 +15,40 @@
 }
 
 .worksList {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
   text-align: center;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
 }
 
 .worksItem {
-// padding: 45px 100px 50px;
+padding: 15px;
 border-radius: 30px;
 background: #FFF;
 box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+
+margin-bottom: 20px;
+
+@include tablet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@include desktop {
+  padding: 45px 100px 50px;
+  margin-bottom: 0px;
+}
 }
 
 .worksBtn {
+  max-width: 107px;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 30px;
   padding: 15px 35px;
   color: var(--light-blue);
@@ -39,10 +63,30 @@ box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
  &:hover {
   color: #fff;
   background-color: var(--light-blue);
-}             
+}
+  
+}
+
+.worksItemTitle {
+  @include font(32, 700, 30, -0.32);
+  color: var(--dark-navi);
 }
 
 .worksItemText {
+  @include font(16, 400, 20, -0.16);
   margin-bottom: 25px;
   margin-top: 25px;
+}
+
+.afterCards {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.worksItemImage {
+  width: 100%;
+  height: auto;
 }

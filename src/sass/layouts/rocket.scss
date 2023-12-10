@@ -1,15 +1,14 @@
 .rocket {
-    padding: 70px 0 60px;
+    padding: 40px 0px;
     background-color: #FFC351;
     background-image: url('../../images/rocketIcon.svg');
     background-repeat: no-repeat;
-    background-position: 70% 100%;
-}
+    background-position: 70% 0%;
 
-.futureForm {
-    width: 512px;
-    height: 601px;
-    border: 1px solid white;
+    @include tablet {
+        padding: 70px 0 60px;
+        background-position: 70% 100%;
+    }
 }
 
 .rocketTitle {

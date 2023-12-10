@@ -1,7 +1,13 @@
 @import "../utils/mixin";
 
 .header {
-  padding-top: 30px;
+  display: none;
+
+  @include tablet {
+    display: block;
+    padding-top: 30px;
+  }
+  
 }
 nav {
   @include betweenFlex;

@@ -5,8 +5,10 @@
 @import './sass/utils/card';
 @import './sass/utils/form';
 
+@import url("https://fonts.googleapis.com/css2?family=Circular+Std:wght@400;700&display=swap");
+@import './sass/layouts/backTop.scss';
 
-
+@import './sass/layouts/mobileHeader.scss';
 @import './sass/layouts/header.scss';
 @import './sass/layouts/hero.scss';
 @import './sass//layouts/about.scss';
@@ -17,5 +19,6 @@
 @import './sass/layouts/hiring.scss';
 @import './sass/layouts/rocket.scss';
 @import './sass//layouts/footer.scss';
+@import "./sass/layouts/openings.scss";
 
 

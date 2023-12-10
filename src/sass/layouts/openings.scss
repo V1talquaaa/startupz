@@ -1,0 +1,19 @@
+.openings {
+    padding: 40px 0px;
+}
+
+.homeLink {
+    @include font(18, 700, 50, 0)
+}
+.tableHead {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableBody {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}

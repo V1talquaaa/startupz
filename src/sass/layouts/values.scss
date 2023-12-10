@@ -1,7 +1,11 @@
 .values {
-  padding-top: 172px;
-  padding-bottom: 196px;
+  padding: 40px 0;
   background-color: #fbfafa;
+
+  @include tablet {
+    padding-top: 172px;
+    padding-bottom: 196px;
+  }
 }
 
 .valuesTitle {
@@ -10,17 +14,24 @@
 }
 
 .valuesList {
-  margin-top: 79px;
-  display: flex;
+  margin-top: 40px;
+
+  @include tablet {
+    margin-top: 79px;
+    display: flex;
+  }
+  
 }
 
-.valuesItem:nth-child(1) {
-  margin-right: 95px;
-  width: 641px;
-}
-.valuesItem:nth-child(2) {
-  margin-right: 80px;
-
+@include tablet {
+  .valuesItem:nth-child(1) {
+    margin-right: 95px;
+    width: 641px;
+  }
+  .valuesItem:nth-child(2) {
+    margin-right: 80px;
+  
+  }
 }
 
 .valuesItemSpan {
@@ -52,4 +63,9 @@
 .bulb {
   position: absolute;
   right: 0;
+  top: 50px;
+
+  @include tablet {
+    top: 0;
+  }
 }

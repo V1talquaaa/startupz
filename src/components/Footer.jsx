@@ -10,23 +10,23 @@ export const Footer = () => {
       <div className="container">
         <div className="footerCopyWrap">
           <img src={footerIcon} alt="" />
-          <p class="footerCopy">&copy; 2020 Startupz</p>
+          <p className="footerCopy">&copy; 2020 Startupz</p>
           <span>All rights reserved.</span>
         </div>
         <div className="footerCompanies">
           <h3 className="footerTitle">Companies</h3>
           <ul className="footerList">
             <li className="footerItem">
-              <a href="#" className="footerItemLink">Tolq</a>
+              <a href="https://tolq.com/" target="_blank" rel="noopener noreferrer nofollow" className="footerItemLink">Tolq</a>
             </li>
             <li className="footerItem">
-              <a href="" className="footerItemLink">LegalSite</a>
+              <a href="https://legalsite.co/" target="_blank" rel="noopener noreferrer nofollow" className="footerItemLink">LegalSite</a>
             </li>
             <li className="footerItem">
-              <a href="" className="footerItemLink">Codekeeper</a>
+              <a href="https://codekeeper.co/" target="_blank" rel="noopener noreferrer nofollow" className="footerItemLink">Codekeeper</a>
             </li>
             <li className="footerItem">
-              <a href="" className="footerItemLink">Feedbacl Labs</a>
+              <a href="https://feedbacklabs.org/" target="_blank" rel="noopener noreferrer nofollow" className="footerItemLink">Feedback Labs</a>
             </li>
           </ul>
         </div>
@@ -36,7 +36,7 @@ export const Footer = () => {
             World Trade Center - The Hague <br /> Prinses Margrietplantsoen 33 <br /> 2595 AM
             The Hague <br /> The Netherlands
           </p>
-          <a href="" className="footerContactLink">Send us an email</a>
+          <a href="#contact" className="footerContactLink">Send us an email</a>
         </div>
         <div className="footerSocial">
           <h3 className="footerTitle">Follow us</h3>
