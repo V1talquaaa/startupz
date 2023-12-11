@@ -1,12 +1,10 @@
 .backTopWrap {
-    display: none;
+  display: none;
 
-    @include tablet {
+  @include tablet {
     display: block;
     position: fixed;
     right: 5%;
     bottom: 5%;
-    }
-
+  }
 }
-

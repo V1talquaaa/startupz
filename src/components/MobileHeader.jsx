@@ -8,7 +8,6 @@ import linkedinIcon from "../images/Linkedin.svg";
 import twitterIcon from "../images/twitter.svg";
 
 export const MobileHeader = () => {
-
   const [isVisible, setIsVisible] = useState(false);
 
   const onButtonClick = () => {
@@ -27,65 +26,81 @@ export const MobileHeader = () => {
         </a>
         <button type="button" className="mobMenuBtn" onClick={onButtonClick}>
           <img src={mobileMenuIcon} alt="" width={34} height={34} />
+        </button>
+        <div className={`mobMenu ${isVisible ? "isVisible" : ""}`}>
+          <button type="button" className="mobMenuCloseBtn">
+            <img
+              src={closeIcon}
+              alt=""
+              className="mobMenuCloseIcon"
+              width={34}
+              height={34}
+              onClick={onButtonClick}
+            />
           </button>
-          <div className={`mobMenu ${isVisible ? "isVisible" : ""}`}>
-            <button type="button" className="mobMenuCloseBtn">
-              <img
-                src={closeIcon}
-                alt=""
-                className="mobMenuCloseIcon"
-                width={34}
-                height={34}
-                onClick={onButtonClick}
-              />
-            </button>
-            <ul className="mobMenuList">
-              <li className="mobMenuItem">
-                <a href="#works" onClick={closeMenu}>Startups</a>
-              </li>
-              <li className="mobMenuItem">
-                <a href="#contact" onClick={closeMenu}>Contact</a>
-              </li>
-              <li className="mobMenuItem">
-                <a href="#hiring" onClick={closeMenu} className="mobMenuLink">
-                  Work with us!
-                </a>
-              </li>
-            </ul>
-            <ul className="mobMenuSocialList">
-              <li className="mobMenuSocialItems">
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  onClick={closeMenu}
-                >
-                  <img src={twitterIcon} alt="" className="mobMenuSocIcon" width={40} height={40} />
-                </a>
-              </li>
-              <li className="mobMenuSocialItems">
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  onClick={closeMenu}
-                >
-                  <img src={linkedinIcon} alt="" className="mobMenuSocIcon" width={40} height={40}/>
-                </a>
-              </li>
-              <li className="mobMenuSocialItems">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  onClick={closeMenu}
-                >
-                  <img src={instagramIcon} alt="" width={40} height={40} />
-                </a>
-              </li>
-            </ul>
-            <img src={mobLogoIcon} alt="" className="mobLogoIcon" />
-          </div>
+          <ul className="mobMenuList">
+            <li className="mobMenuItem">
+              <a href="#works" onClick={closeMenu}>
+                Startups
+              </a>
+            </li>
+            <li className="mobMenuItem">
+              <a href="#contact" onClick={closeMenu}>
+                Contact
+              </a>
+            </li>
+            <li className="mobMenuItem">
+              <a href="#hiring" onClick={closeMenu} className="mobMenuLink">
+                Work with us!
+              </a>
+            </li>
+          </ul>
+          <ul className="mobMenuSocialList">
+            <li className="mobMenuSocialItems">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                onClick={closeMenu}
+              >
+                <img
+                  src={twitterIcon}
+                  alt=""
+                  className="mobMenuSocIcon"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </li>
+            <li className="mobMenuSocialItems">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                onClick={closeMenu}
+              >
+                <img
+                  src={linkedinIcon}
+                  alt=""
+                  className="mobMenuSocIcon"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </li>
+            <li className="mobMenuSocialItems">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                onClick={closeMenu}
+              >
+                <img src={instagramIcon} alt="" width={40} height={40} />
+              </a>
+            </li>
+          </ul>
+          <img src={mobLogoIcon} alt="" className="mobLogoIcon" />
+        </div>
       </div>
     </header>
   );

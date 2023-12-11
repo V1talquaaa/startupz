@@ -1,0 +1,46 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(56, 52, 52, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.modalContainer {
+  position: relative;
+  width: 70%;
+  height: 90%;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5 px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  overflow: auto;
+}
+
+.closeModalBtn {
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+
+  @include tablet {
+    width: 300px;
+    height: 200px;
+  }
+}

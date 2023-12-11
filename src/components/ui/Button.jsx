@@ -1,13 +1,11 @@
 import React from 'react'
 
-export const Button = ({text, color, backgroundColor}) => {
+export const Button = () => {
 
-    const buttonColor = {
-        color: `${color}`,
-        backgroundColor: `${backgroundColor}`,
-    }
 
   return (
-    <button type="button" className='btn' style={buttonColor}>{text}</button>
+    <div className="modalWrap">
+      <button type="button" className='openModalBtn'>Modal Open</button>
+    </div>
   )
 }

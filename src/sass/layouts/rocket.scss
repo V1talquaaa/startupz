@@ -1,24 +1,23 @@
 .rocket {
-    padding: 40px 0px;
-    background-color: #FFC351;
-    background-image: url('../../images/rocketIcon.svg');
-    background-repeat: no-repeat;
-    background-position: 70% 0%;
+  padding: 40px 0px;
+  background-color: #ffc351;
+  background-image: url("../../images/rocketIcon.svg");
+  background-repeat: no-repeat;
+  background-position: 70% 0%;
 
-    @include tablet {
-        padding: 70px 0 60px;
-        background-position: 70% 100%;
-    }
+  @include tablet {
+    padding: 70px 0 60px;
+    background-position: 70% 100%;
+  }
 }
 
 .rocketTitle {
-    @include font(60, 700, 55, -1.2);
-    color: #fff;
+  @include font(60, 700, 55, -1.2);
+  color: #fff;
 }
 
 .rocketText {
-    margin: 34px 0px;
-    @include font(24, 500, 24, -0.24);
-    color: #fff;
-
+  margin: 34px 0px;
+  @include font(24, 500, 24, -0.24);
+  color: #fff;
 }

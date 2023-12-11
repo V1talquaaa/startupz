@@ -1,0 +1,12 @@
+.startups {
+  @include desktop {
+    margin: 180px 0px;
+  }
+}
+.afterCards {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}

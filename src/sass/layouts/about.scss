@@ -1,79 +1,74 @@
 .about {
-    padding: 40px 0px;
-    background-color: #FBFAFA;
+  padding: 40px 0px;
+  background-color: #fbfafa;
 
-    @include tablet {
+  @include tablet {
     padding-top: 147px;
     padding-bottom: 157px;
-    }
+  }
 }
 
 .aboutTitle {
-    @include font(50, 700, 50, -1);
-    color: var(--dark-navi);
+  @include font(50, 700, 50, -1);
+  color: var(--dark-navi);
 }
 
 .aboutText {
-    @include font(24, 400, 30, -0.24);
-    color: var(--orange);
-    margin-top: 32px;
+  @include font(24, 400, 30, -0.24);
+  color: var(--orange);
+  margin-top: 32px;
 }
 
 .aboutList {
-    margin-top: 79px;
+  margin-top: 79px;
 
-    @include desktop {
-        display: flex;
-    }
-
+  @include desktop {
+    display: flex;
+  }
 }
 
 @include desktop {
-    .aboutItem:nth-child(1) {
-        margin-right: 95px;
-        width: 313px;
-    }
-    .aboutItem:nth-child(2) {
-        margin-right: 80px;
-        width: 329px;
-        
-    }
-    
-    .aboutItem:last-child {
-        width: 307px;
-    }
+  .aboutItem:nth-child(1) {
+    margin-right: 95px;
+    width: 313px;
+  }
+  .aboutItem:nth-child(2) {
+    margin-right: 80px;
+    width: 329px;
+  }
+
+  .aboutItem:last-child {
+    width: 307px;
+  }
 }
 
-
-
 .aboutItemSpan {
-    @include font(30, 700, 30, -0.3);
-    color: var(--orange);
-    display: flex;
-    flex-direction: column;
+  @include font(30, 700, 30, -0.3);
+  color: var(--orange);
+  display: flex;
+  flex-direction: column;
 
-    &::after {
-        content: "";
-        margin-top: 19px;
-        width: 50px;
-        height: 1px;
-        display: block;
-        background-color: var(--dark-navi);
-      
-    }
+  &::after {
+    content: "";
+    margin-top: 19px;
+    width: 50px;
+    height: 1px;
+    display: block;
+    background-color: var(--dark-navi);
+  }
 }
 
 .aboutItemText {
-    @include font(30, 400, 38, -0.3);
-    margin-top: 26px;
-    color: var(--dark-navi);
+  @include font(30, 400, 38, -0.3);
+  margin-top: 26px;
+  color: var(--dark-navi);
 }
 
 .qmWrap {
-    position: relative;
+  position: relative;
 }
 
 .questioMark {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }

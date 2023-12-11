@@ -1,63 +1,61 @@
 .solutions {
-    padding: 40px 0px;
+  padding: 40px 0px;
 
-    @include tablet {
-        padding-top: 60px;
-        padding-bottom: 140px;
-    }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 140px;
+  }
 }
 .chatWrap {
-    display: none;
+  display: none;
 
-    @include tablet {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
 }
 
 .chatText {
-    color: #fff;
-    background-color: var(--light-blue);
-    padding: 18px 14px;
-    border-radius: 32px 32px 0px 32px;
-    @include tablet {
-        margin-right: 69px;
-    }
+  color: #fff;
+  background-color: var(--light-blue);
+  padding: 18px 14px;
+  border-radius: 32px 32px 0px 32px;
+  @include tablet {
+    margin-right: 69px;
+  }
 }
 
 .solutionContentWrap {
-    margin-top: 6px;
-    display: flex;
-    align-items: center;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
 }
 
 .titleIconsWrap {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 .solutionsTitle {
-    margin-left: 15px;
-    margin-right: 15px;
-    @include font(40, 700, 50, -0.4);
-    color: var(--orange);
-    text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  @include font(40, 700, 50, -0.4);
+  color: var(--orange);
+  text-align: center;
 
-    @include tablet {
-        margin-left: 34px;
-        margin-right: 34px;
-    }
+  @include tablet {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
 }
 
 .solutionBadge {
-    display: none;
+  display: none;
 
-    @include tablet {
-        display: block;
-        margin-left: 147px;
-    }
-    
+  @include tablet {
+    display: block;
+    margin-left: 147px;
+  }
 }

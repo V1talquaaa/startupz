@@ -1,61 +1,62 @@
 .hero {
-    padding-top: 100px;
+  padding-top: 100px;
 
-    @include desktop {
-        padding-top: 145px;
-        padding-bottom: 0;
-        background-image: url('../../images/hero.png');
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-    }
+  @include desktop {
+    padding-top: 145px;
+    padding-bottom: 0;
+    background-image: url("../../images/hero.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
 }
 
 .heroTitle {
-    @include font(60, 700, 85, -1.7);
-    color: var(--dark-navi);
+  @include font(60, 700, 85, -1.7);
+  color: var(--dark-navi);
 
-    @include tablet {
-        @include font(85, 700, 85, -1.7);
-    }
+  @include tablet {
+    @include font(85, 700, 85, -1.7);
+  }
 }
 
 .heroText {
-    margin-top: 25px;
-    @include font(24, 400, 30, -0.24);
-    color: var(--orange);
+  margin-top: 25px;
+  @include font(24, 400, 30, -0.24);
+  color: var(--orange);
 }
 
 .heroBtn {
-    margin-bottom: 50px;
-    margin-top: 25px;
-    padding: 15px 35px;
-    color: #fff;
-    background-color: var(--light-blue);
-    border: 1px solid;
-    border-radius: 32px;
-    border-color: inherit;
-    cursor: pointer;
-    @include hoverLinkTransition;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  padding: 15px 35px;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--light-blue);
+  border: 1px solid;
+  border-radius: 32px;
+  border-color: inherit;
+  cursor: pointer;
+  @include hoverLinkTransition;
 
-   &:hover {
+  &:hover {
     color: var(--light-blue);
     background-color: #fff;
-}
+  }
 
-    @include desktop {
-        margin-bottom: 225px;
-    }
+  @include desktop {
+    margin-bottom: 225px;
+  }
 }
 
 .afterCards {
-    margin-top: 180px;
-    padding: 0 67px;
-    display: flex;
-    align-items: center;
+  margin-top: 180px;
+  padding: 0 67px;
+  display: flex;
+  align-items: center;
 }
 
 .afterCardsText {
-    margin: 0 33px;
-    @include font(40, 700, 45, -0.4);
-    color: var(--orange);
+  margin: 0 33px;
+  @include font(40, 700, 45, -0.4);
+  color: var(--orange);
 }

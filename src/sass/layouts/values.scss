@@ -20,7 +20,6 @@
     margin-top: 79px;
     display: flex;
   }
-  
 }
 
 @include tablet {
@@ -30,7 +29,7 @@
   }
   .valuesItem:nth-child(2) {
     margin-right: 80px;
-  
+    width: 300px;
   }
 }
 
